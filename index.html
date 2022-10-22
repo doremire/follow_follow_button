@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div id="stalker">
+    <a href="https://twitter.com/doremire0?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @doremire0</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+</div>
+    <script>
+ //マウスストーカー用のdivを取得
+ const stalker = document.getElementById('stalker'); 
+
+//上記のdivタグをマウスに追従させる処理
+document.addEventListener('mousemove', function (e) {
+    stalker.style.transform = 'translate(' + e.clientX + 'px, ' + e.clientY + 'px)';
+});
+     
+    </script>
+</body>
+
+</html>
